@@ -4,6 +4,7 @@ import myContext from '../../../context/data/myContext';
 import Layout from '../../../components/layout/Layout';
 // import DashboardTab from './Dashboardtab';
 import Dashboardtab from './Dashboardtab';
+import { Link } from 'react-router-dom';
 
 function Dashbord() {
     const context = useContext(myContext)
@@ -56,6 +57,10 @@ function Dashbord() {
             <Dashboardtab/>
             
         </section>
+        <Link to="/" className="flex">
+                <h1 className={`text-2xl font-bold px-2 py-1 rounded ${mode === 'dark' ? 'text-white' : 'text-black'}`}>PATWA-UTENSILS</h1>
+              </Link>
+
     </>
   )
 }

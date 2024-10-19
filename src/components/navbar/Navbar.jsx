@@ -7,6 +7,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import { useSelector } from 'react-redux';
+import Simg from '../../assets/SARTHAK-PROFILE.jpeg';
 
 export default function Navbar() {
   const { mode, toggleMode } = useContext(MyContext);
@@ -156,7 +157,8 @@ useEffect(()=>{
               {/* Profile Picture */}
               <div className="hidden lg:ml-8 lg:flex">
                 <a href="#" className="flex items-center">
-                  <img className="inline-block w-10 h-10 rounded-full" src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg" alt="Profile" />
+                  <img className="inline-block w-10 h-10 rounded-full" src={Simg} alt="Profile" />
+               
                 </a>
               </div>
 
